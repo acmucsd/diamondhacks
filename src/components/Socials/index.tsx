@@ -15,5 +15,5 @@ export default function Socials() {
         <img src="./facebook-logo.svg" alt="Facebook Logo" className={styles.socialImage} />
       </a>
     </div>
-  )
+  );
 }
