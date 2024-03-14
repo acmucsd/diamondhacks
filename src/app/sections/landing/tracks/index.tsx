@@ -6,7 +6,7 @@ const Tracks = () => {
       <h2>Choose your track!</h2>
       <div className={styles.tracksContainer}>
         <div className={styles.track}>
-          <img src="/lost-at-sea.svg" alt="White Square" />
+          <img src="/tracks/lost-at-sea.svg" alt="White Square" />
           <div className={styles.trackDescription}>
             <h3>01. Lost at Sea</h3>
             <p>
@@ -18,7 +18,7 @@ const Tracks = () => {
           </div>
         </div>
         <div className={styles.track}>
-          <img src="/marks-the-spot.svg" alt="Marks the Spot" />
+          <img src="/tracks/marks-the-spot.svg" alt="Marks the Spot" />
 
           <div className={styles.trackDescription}>
             <h3>02. X Marks the Spot</h3>
@@ -30,7 +30,7 @@ const Tracks = () => {
           </div>
         </div>
         <div className={styles.track}>
-          <img src="/all-hands-on-deck.svg" alt="All Hands on Deck" />
+          <img src="/tracks/all-hands-on-deck.svg" alt="All Hands on Deck" />
 
           <div className={styles.trackDescription}>
             <h3>03. All Hands on Deck</h3>
@@ -42,7 +42,7 @@ const Tracks = () => {
           </div>
         </div>
         <div className={styles.track}>
-          <img src="/captains-classroom.svg" alt="Captain's Classroom" />
+          <img src="/tracks/captains-classroom.svg" alt="Captain's Classroom" />
 
           <div className={styles.trackDescription}>
             <h3>04. Captain&apos;s Classroom</h3>
