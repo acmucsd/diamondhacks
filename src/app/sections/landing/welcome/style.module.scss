@@ -1,0 +1,116 @@
+.pageContainer {
+  width: 100%;
+}
+
+.welcome {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-bottom: 10rem;
+
+  @media screen and (max-width: 700px) {
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.welcomeMessage {
+  display: flex;
+  width: 520px;
+  max-width: 520px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .welcomeMessage {
+    width: 100%;
+  }
+}
+
+.diamondsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .diamondsContainer {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .diamond {
+    max-width: 400px;
+    margin: 25px 0 25px 0;
+  }
+}
+
+// @media (max-width: 800px) {
+//   .diamondsContainer {
+//     grid-template-columns: 1fr;
+//     margin-bottom: 100px;
+//   }
+// }
+
+.diamond {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Need this in order for Image fill={true} to work */
+}
+
+.studentCount {
+  color: #e35e77;
+  font-size: 2.25rem;
+  font-weight: 700;
+
+  @media (max-width: 400px) {
+    font-size: 1.6875rem;
+  }
+}
+
+.eventCount {
+  color: #9179cc;
+  font-size: 2.25rem;
+  font-weight: 700;
+
+  @media (max-width: 400px) {
+    font-size: 1.6875rem;
+  }
+}
+
+.diamondText {
+  font-size: 1.5rem;
+
+  @media (max-width: 400px) {
+    font-size: 1.125rem;
+  }
+}
+
+.prizes {
+  color: #4ca98f;
+  font-size: 2.25rem;
+  font-weight: 700;
+
+  @media (max-width: 400px) {
+    font-size: 1.6875rem;
+  }
+}

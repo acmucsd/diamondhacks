@@ -1,6 +1,6 @@
 :root {
   --Dark-Bleu: #003366;
-  --transparent: rgb(0, 0, 0, );
+  --transparent: rgb(0, 0, 0);
   --side-padding: 120px;
   --side-padding-small: 30px;
 }
@@ -11,7 +11,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #a9e0fff2 25.52%, #FFE2B6 76.79%, #FFACAC 98.6%), #FFF;
+  background: linear-gradient(180deg, #a9e0fff2 25.52%, #ffe2b6 76.79%, #ffacac 98.6%);
+  overscroll-behavior: none;
   background-attachment: fixed;
   z-index: 0;
 }

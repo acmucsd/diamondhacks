@@ -2,7 +2,18 @@ import styles from './style.module.scss';
 
 const BackgroundGraphic = () => {
   return (
-    <img src="/landing-page-graphic.svg" alt="Landing Page Graphic" className={styles.backgroundImage}/>
+    <>
+      <img
+        src="/backgrounds/hero/left.svg"
+        alt="Landing Page Graphic"
+        className={`${styles.backgroundImage} ${styles.left}`}
+      />
+      <img
+        src="/backgrounds/hero/right.svg"
+        alt="Landing Page Graphic"
+        className={`${styles.backgroundImage} ${styles.right}`}
+      />
+    </>
   );
 };
 
