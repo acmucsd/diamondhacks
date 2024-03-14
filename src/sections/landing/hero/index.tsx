@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './style.module.scss';
 import Arrow from '@/public/arrow.svg';
-import BackgroundGraphic from '@/app/components/BackgroundGraphic';
+import BackgroundGraphic from '@/components/background';
 
 const Hero = () => {
   return (
