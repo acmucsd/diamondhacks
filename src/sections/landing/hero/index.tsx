@@ -11,7 +11,7 @@ const Hero = () => {
       <div className={styles.cta}>
         <div>
           <h1>DiamondHacks</h1>
-          <p>Spring 2024 | UC San Diego</p>
+          <p>April 6-7, 2024 | UC San Diego</p>
         </div>
         <div className={styles.buttonsContainer}>
           <Link

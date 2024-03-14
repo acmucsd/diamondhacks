@@ -1,7 +1,12 @@
 .container {
+  max-width: 100rem;
   display: flex;
   justify-content: space-between;
   margin: 7.5rem;
+
+  @media screen and (min-width: 1800px) {
+    margin: 7.5rem auto;
+  }
 }
 
 .left {
