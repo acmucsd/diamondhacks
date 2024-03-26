@@ -124,7 +124,12 @@ export default function Navbar() {
               </div>
             </div>
           </Link>
-          <IconButton edge="start" className={styles.buttonColorBlue} onClick={handleMobileClose} aria-label="close">
+          <IconButton
+            edge="start"
+            className={styles.buttonColorBlue}
+            onClick={handleMobileClose}
+            aria-label="close"
+          >
             <CloseIcon />
           </IconButton>
         </Toolbar>
@@ -138,9 +143,9 @@ export default function Navbar() {
         <div style={{ margin: '2rem 0' }}>
           <Socials />
         </div>
-          <a className={styles.applyNowButton} href="https://acmurl.com/diamondhacks-preregister">
-            Apply now
-          </a>
+        <a className={styles.applyNowButton} href="https://acmurl.com/diamondhacks-preregister">
+          Apply now
+        </a>
       </Dialog>
     </div>
   );

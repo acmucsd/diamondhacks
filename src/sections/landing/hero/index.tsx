@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className={styles.container}>
       <Navbar />
-      
+
       <BackgroundGraphic />
       <div className={styles.cta}>
         <div>
