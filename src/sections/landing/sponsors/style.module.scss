@@ -1,0 +1,27 @@
+.pageContainer {
+  margin-top: 8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .sponsors {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .sponsor {
+      max-width: 10rem;
+      height: fit-content;
+      background-color: white;
+      padding: 1rem;
+      border-radius: 0.75rem;
+    }
+  }
+}

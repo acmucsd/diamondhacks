@@ -4,6 +4,7 @@ import styles from './page.module.scss';
 import Hero from '@/sections/landing/hero';
 import Welcome from '@/sections/landing/welcome';
 import Tracks from '@/sections/landing/tracks';
+import Sponsors from '@/sections/landing/sponsors';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Welcome />
       <Tracks />
+      <Sponsors />
     </main>
   );
 }
