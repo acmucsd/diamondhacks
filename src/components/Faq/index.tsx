@@ -31,7 +31,7 @@ export default function FAQ({ data }: FaqProps) {
     };
 
   return (
-    <ThemeProvider theme={theme} >
+    <ThemeProvider theme={theme}>
       {data.map((questionObject, index) => (
         <Accordion
           disableGutters
@@ -39,9 +39,8 @@ export default function FAQ({ data }: FaqProps) {
           expanded={expandedIndex === index}
           onChange={handleChange(index)}
           sx={{
-            //borderTop: index === 0 ? 3 : 0,
-            //border: '1px solid transparent', // Set transparent border
-            bgcolor: 'transparent',
+            padding: '1rem',
+            borderRadius: '0.75rem !important',
             boxShadow: 'none',
             margin: '20px 0',
             '&.Mui-expanded': {
@@ -49,18 +48,16 @@ export default function FAQ({ data }: FaqProps) {
             },
             '&:before': {
               display: 'none',
-            }
+            },
           }}
           key={questionObject.question}
         >
           <AccordionSummary expandIcon={<ExpandMoreIcon className={s.header} />}>
-            <Typography sx={{ fontSize: 20, 
-              fontWeight: 'bold',
-              }}>
+            <Typography sx={{ fontSize: 20, fontWeight: 'bold' }}>
               {questionObject.question}
             </Typography>
           </AccordionSummary>
-          <AccordionDetails className={s.description} >
+          <AccordionDetails className={s.description}>
             <Typography component="div" sx={{ fontSize: 16 }}>
               <div>{questionObject.answer}</div>
             </Typography>

@@ -1,5 +1,5 @@
 import Faq from '../../components/Faq';
-import faqData from './faq.tsx';
+import faqData from './faq';
 import s from './style.module.css';
 
 export default function FAQ() {

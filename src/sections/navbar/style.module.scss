@@ -1,17 +1,30 @@
 .container {
+  position: fixed;
   align-self: flex-start;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 2 * var(--side-padding));
 
   padding: 3rem 0;
-  z-index: 1;
+  z-index: 100;
 
   @media screen and (max-width: 768px) {
     padding: 1rem 0;
+    width: calc(100% - 2 * var(--side-padding-small));
   }
+}
+
+.leftSection,
+.rightSectionDesktop {
+  backdrop-filter: blur(2px);
+  background-color: rgba(169, 224, 255, 0.7);
+  border-radius: 0.75rem;
+}
+
+.rightSectionDesktop {
+  padding-left: 1rem;
+  border-radius: 2rem;
 }
 
 .leftSection {

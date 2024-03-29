@@ -1,23 +1,15 @@
 .background {
-    min-height: 100vh;
-  }
-  
-  .faqContainer {
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 65%;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .faqTitle {
-    font-size: 65px;
-  }
-  
-  .faqBox {
-    margin-top: 20px;
-    max-width: 900px;
-  }
+  min-height: 100vh;
+}
+
+.faqContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faqTitle {
+  font-size: 4.125rem;
+  margin-bottom: 3rem;
+  margin-top: 8rem;
+}

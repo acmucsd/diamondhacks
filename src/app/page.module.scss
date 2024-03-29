@@ -4,17 +4,12 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   color: var(--Dark-Bleu);
-  margin: 0 var(--side-padding);
-
-  @media screen and (max-width: 768px) {
-    margin: 0 var(--side-padding-small);
-  }
 
   h1,
   h2,
   h3,
   p {
     margin: 0;
-    z-index: 2;
+    z-index: 1;
   }
 }

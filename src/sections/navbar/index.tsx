@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link';
 import styles from './style.module.scss';
 import { useState } from 'react';
@@ -10,6 +11,10 @@ const LINKS = [
   {
     name: 'Home',
     href: '/',
+  },
+  {
+    name: 'FAQ',
+    href: '/faq',
   },
 ];
 
@@ -72,7 +77,7 @@ export default function Navbar() {
             backgroundColor: 'rgba(252, 252, 252, 0.7)',
             maxHeight: '80vh',
             width: '100%',
-            margin: 0,
+            margin: '0 calc(-1 * var(--side-padding-small))',
             alignSelf: 'flex-start',
             alignItems: 'center',
             padding: '1rem 0',
@@ -93,7 +98,17 @@ export default function Navbar() {
             onClick={handleMobileClose}
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
-            <div className={styles.leftSection}>
+            <div
+              className={styles.leftSection}
+              style={
+                mobileOpen
+                  ? {
+                      backdropFilter: 'unset',
+                      backgroundColor: 'transparent',
+                    }
+                  : undefined
+              }
+            >
               <img
                 className={styles.logoImage}
                 src="/diamondhacks-logo.svg"
