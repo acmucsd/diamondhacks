@@ -13,7 +13,7 @@ const LINKS = [
     href: '/',
   },
   {
-    name: 'FAQ',
+    name: 'FAQs',
     href: '/faq',
   },
 ];
