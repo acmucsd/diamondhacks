@@ -30,7 +30,7 @@
   flex-direction: column;
   color: var(--Dark-Bleu);
 
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 
   @media screen and (max-width: 1100px) {
     font-size: 1rem;
@@ -40,7 +40,7 @@
 .rightSectionDesktop {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
+  gap: 2rem;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -51,7 +51,7 @@
   color: var(--Dark-Bleu);
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 
   @media screen and (max-width: 1100px) {
     font-size: 1rem;
@@ -62,21 +62,26 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    margin-right: 1rem;
   }
 }
 
 .applyNowButton {
-  font-size: inherit;
-  padding: 1rem;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
   background-color: #142e52;
   color: white;
   border-radius: 2rem;
   text-decoration: none;
+
+  @media screen and (max-width: 1100px) {
+    font-size: 1rem;
+  }
 }
 
 .hamburgerMenuButton {
   display: none;
+  padding: 0;
+  margin: 0;
 
   @media screen and (max-width: 768px) {
     display: block;

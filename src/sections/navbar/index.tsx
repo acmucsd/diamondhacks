@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './style.module.scss';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { Dialog, IconButton, Toolbar } from '@mui/material';
@@ -10,22 +10,6 @@ const LINKS = [
   {
     name: 'Home',
     href: '/',
-  },
-  {
-    name: 'Resources',
-    href: '/resources',
-  },
-  {
-    name: 'Prizes',
-    href: '/prizes',
-  },
-  {
-    name: 'FAQs',
-    href: '/faq',
-  },
-  {
-    name: 'Contact',
-    href: '/contact',
   },
 ];
 
@@ -50,10 +34,6 @@ export default function Navbar() {
       >
         <div className={styles.leftSection}>
           <img className={styles.logoImage} src="/diamondhacks-logo.svg" alt="DiamondHacks logo" />
-          <div className={styles.logoTextContainer}>
-            <strong>diamond</strong>
-            <span>hacks</span>
-          </div>
         </div>
       </Link>
 
@@ -89,13 +69,14 @@ export default function Navbar() {
         onClose={handleMobileClose}
         PaperProps={{
           style: {
-            backgroundColor: '#d4d4d4',
+            backgroundColor: 'rgba(252, 252, 252, 0.7)',
             maxHeight: '80vh',
             width: '100%',
             margin: 0,
             alignSelf: 'flex-start',
             alignItems: 'center',
-            padding: '1.5rem 0',
+            padding: '1rem 0',
+            backdropFilter: 'blur(4px)',
           },
         }}
       >
@@ -104,7 +85,7 @@ export default function Navbar() {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'space-between',
-            width: '80%',
+            width: 'calc(100% - 2 * var(--side-padding-small))',
           }}
         >
           <Link
@@ -118,10 +99,6 @@ export default function Navbar() {
                 src="/diamondhacks-logo.svg"
                 alt="DiamondHacks logo"
               />
-              <div className={styles.logoTextContainer}>
-                <strong>diamond</strong>
-                <span>hacks</span>
-              </div>
             </div>
           </Link>
           <IconButton
