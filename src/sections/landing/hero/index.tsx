@@ -3,13 +3,10 @@ import Image from 'next/image';
 import styles from './style.module.scss';
 import Arrow from '@/public/arrow.svg';
 import BackgroundGraphic from '@/components/background';
-import Navbar from '@/sections/navbar';
 
 const Hero = () => {
   return (
     <div className={styles.container}>
-      <Navbar />
-
       <BackgroundGraphic />
       <div className={styles.cta}>
         <div>

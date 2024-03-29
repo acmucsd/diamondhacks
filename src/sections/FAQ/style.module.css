@@ -1,0 +1,15 @@
+.background {
+  min-height: 100vh;
+}
+
+.faqContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faqTitle {
+  font-size: 4.125rem;
+  margin-bottom: 3rem;
+  margin-top: 8rem;
+}

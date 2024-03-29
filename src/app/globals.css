@@ -20,4 +20,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 var(--side-padding);
+
+  @media screen and (max-width: 768px) {
+    margin: 0 var(--side-padding-small);
+  }
 }
