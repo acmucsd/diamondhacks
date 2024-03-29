@@ -1,0 +1,93 @@
+.container {
+  align-self: flex-start;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  padding: 3rem 0;
+  z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem 0;
+  }
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logoImage {
+  height: 100%;
+}
+
+.logoTextContainer {
+  display: flex;
+  flex-direction: column;
+  color: var(--Dark-Bleu);
+
+  font-size: 1.25rem;
+
+  @media screen and (max-width: 1100px) {
+    font-size: 1rem;
+  }
+}
+
+.rightSectionDesktop {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.navItem {
+  color: var(--Dark-Bleu);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.25rem;
+
+  @media screen and (max-width: 1100px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+}
+
+.applyNowButton {
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  background-color: #142e52;
+  color: white;
+  border-radius: 2rem;
+  text-decoration: none;
+
+  @media screen and (max-width: 1100px) {
+    font-size: 1rem;
+  }
+}
+
+.hamburgerMenuButton {
+  display: none;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.buttonColorBlue {
+  color: var(--Dark-Bleu);
+}

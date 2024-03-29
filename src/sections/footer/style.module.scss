@@ -1,8 +1,12 @@
 .container {
+  max-width: 100rem;
   display: flex;
   justify-content: space-between;
+  margin: 7.5rem;
 
-  width: 100%;
+  @media screen and (min-width: 1800px) {
+    margin: 7.5rem auto;
+  }
 }
 
 .left {
@@ -10,14 +14,13 @@
   align-items: center;
   gap: 1rem;
 
-  color: inherit;
+  color: black;
   text-decoration: none;
 }
 
 .title {
   font-size: 32px;
   font-weight: normal;
-  font-family: inherit;
 }
 
 .acm {
@@ -35,5 +38,6 @@
     flex-direction: column;
     align-items: center;
     gap: 0;
+    text-align: center;
   }
 }
