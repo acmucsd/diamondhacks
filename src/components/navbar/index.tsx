@@ -21,6 +21,10 @@ const LINKS = [
     href: '/#sponsors',
   },
   {
+    name: 'Prizes',
+    href: '/prizes',
+  },
+  {
     name: 'FAQs',
     href: '/faq',
   },
