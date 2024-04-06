@@ -1,0 +1,39 @@
+.container {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  max-width: 100rem;
+
+  h2 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 700;
+
+    @media screen and (width <= 768px) {
+      font-size: 3rem;
+    }
+  }
+
+  .topThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5rem;
+    width: 60%;
+
+    @media screen and (width <= 1400px) {
+      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+
+  .prizes {
+    width: 100%;
+    gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+  }
+}
