@@ -13,8 +13,8 @@ const newScheduleItem = (
 ): ScheduleItem => ({ type, time, name, location });
 
 export const FRIDAY_SCHEDULE: ScheduleItem[] = [
-  newScheduleItem('Notice', '8:30 AM - 9:30 AM', 'Check-in', 'SC Auditorium'),
-  newScheduleItem('Main Event', '9:30 AM - 10:15 AM', 'Opening Ceremony', 'SC Auditorium'),
+  newScheduleItem('Notice', '8:30 AM - 9:30 AM', 'Check-in', 'SDSC Auditorium'),
+  newScheduleItem('Main Event', '9:30 AM - 10:15 AM', 'Opening Ceremony', 'SDSC Auditorium'),
   newScheduleItem('Social', '10:30 AM - 11:00 AM', 'Team Formation', 'Warren Bear Lawn'),
   newScheduleItem('Notice', '11:00 AM', 'Hacking Starts!', 'CSE Basement'),
   newScheduleItem('Notice', '12:00 PM', 'Lunch Distribution', 'Multipurpose Room'),
@@ -34,8 +34,14 @@ export const FRIDAY_SCHEDULE: ScheduleItem[] = [
   ),
   newScheduleItem('Notice', '6:00 PM', 'Dinner Distribution', 'Multipurpose Room'),
   newScheduleItem(
+    'Workshop',
+    '7:00 PM - 8:00 PM',
+    'Intro to Figma (hosted by ACM Design)',
+    'CSE 1202'
+  ),
+  newScheduleItem(
     'Social',
-    '7:00 PM - 9:00 PM',
+    '8:00 PM - 9:00 PM',
     'Pirates of the Caribbean Watch Party',
     'CSE 1202'
   ),

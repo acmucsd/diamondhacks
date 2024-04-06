@@ -1,12 +1,23 @@
+import { useState } from 'react';
 import { FRIDAY_SCHEDULE } from './schedule';
 import styles from './style.module.scss';
 
 const Schedule = () => {
+  const [display, setDisplay] = useState<'Friday' | 'Saturday'>('Friday');
   const schedule = FRIDAY_SCHEDULE;
 
   return (
-    <div className={styles.container}>
-      <h2>Schedule</h2>
+    <div className={styles.container} id="schedule">
+      <div className={styles.header}>
+        <h2>Schedule</h2>
+        <select
+          value={display}
+          onChange={e => setDisplay(e.target.value === 'Friday' ? 'Friday' : 'Saturday')}
+        >
+          <option>Friday</option>
+          <option>Saturday</option>
+        </select>
+      </div>
       <table>
         <tr>
           <th>Type</th>
