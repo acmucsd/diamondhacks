@@ -32,6 +32,7 @@ export const PRIZES = [
   newReward('Best Solo Hack', ['Wireless Earbuds', '1Password Swag Bag'], ['earbuds.png']),
   newReward('Best Duo Hack', ['2x $50 Fan-Fan Gift Cards'], ['fanfan.png']),
   newReward('Best Beginner Hack', ['4x Squishmallows', 'Desmos Swag Bag'], ['squishmallow.png']),
+  newReward('Best Use of CoCalc', ['4x CoCalc Credits'], ['cocalc.png']),
   newReward('Track: Lost at Sea', ['4x Amazon Echo Pop'], ['echopop.png']),
   newReward('Track: X Marks the Spot', ['4x Speaker'], ['anker.png']),
   newReward('Track: All Hands on Deck', ['4x Wireless Charging Desk Lamp'], ['lamp.jpg']),
