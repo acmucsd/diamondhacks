@@ -29,28 +29,29 @@
       align-items: center;
 
       &[data-type='Main Event'] {
-        background: #D6E5F8;
-        color: #142E52;
+        background: #d6e5f8;
+        color: #142e52;
       }
 
       &[data-type='Social'] {
-        background: #D7EDE7;
-        color: #00573F;
+        background: #d7ede7;
+        color: #00573f;
       }
 
-      &[data-type='Workshop'] {background: #ECE6F9;
-        background: #ECE6F9;
-        color: #35118D;
+      &[data-type='Workshop'] {
+        background: #ece6f9;
+        background: #ece6f9;
+        color: #35118d;
       }
 
       &[data-type='Notice'] {
         color: #8f5a26;
-        background: #FFE2C4;
+        background: #ffe2c4;
       }
 
       &[data-type='Deadline'] {
-        background: #FAD5DC;
-        color: #8D0D25;
+        background: #fad5dc;
+        color: #8d0d25;
       }
     }
 
