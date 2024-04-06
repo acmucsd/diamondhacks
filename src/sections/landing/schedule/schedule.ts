@@ -28,7 +28,7 @@ export const SATURDAY_SCHEDULE: ScheduleItem[] = [
   newScheduleItem('Main Event', '9:30 AM - 10:15 AM', 'Opening Ceremony', 'SDSC Auditorium'),
   newScheduleItem('Social', '10:30 AM - 11:00 AM', 'Team Formation', 'Warren Bear Lawn'),
   newScheduleItem('Info', '11:00 AM', 'Hacking Starts!', 'CSE Basement'),
-  newScheduleItem('Info', '12:00 PM', 'Lunch Distribution', 'Warren Mall'),
+  newScheduleItem('Info', '12:00 PM', 'Lunch Distribution', 'Warren Bear Lawn'),
   newScheduleItem(
     'Workshop',
     '2:00 PM - 3:00 PM',
@@ -43,7 +43,7 @@ export const SATURDAY_SCHEDULE: ScheduleItem[] = [
     'Machine Learning Prototyping (hosted by ACM)',
     'CSE 1202'
   ),
-  newScheduleItem('Info', '6:00 PM', 'Dinner Distribution', 'Warren Mall'),
+  newScheduleItem('Info', '6:00 PM', 'Dinner Distribution', 'Warren Bear Lawn'),
   newScheduleItem(
     'Workshop',
     '7:00 PM - 8:00 PM',
@@ -60,7 +60,7 @@ export const SATURDAY_SCHEDULE: ScheduleItem[] = [
 ];
 
 export const SUNDAY_SCHEDULE = [
-  newScheduleItem('Info', '8:30 AM', 'Breakfast Distribution', 'Warren Mall'),
+  newScheduleItem('Info', '8:30 AM', 'Breakfast Distribution', 'Warren Bear Lawn'),
   newScheduleItem('Workshop', '9:00 AM - 10:00 AM', 'Career Talk with CoCalc', 'CSE 1202'),
   newScheduleItem('Workshop', '10:00 AM - 11:00 AM', 'Intro to RegEx (hosted by TSE)', 'CSE 1202'),
   newScheduleItem(
@@ -69,7 +69,7 @@ export const SUNDAY_SCHEDULE = [
     'Intro to Backend and APIs (hosted by IEEE)',
     'CSE 1202'
   ),
-  newScheduleItem('Info', '12:00 PM', 'Lunch Distribution', 'Warren Mall'),
+  newScheduleItem('Info', '12:00 PM', 'Lunch Distribution', 'Warren Bear Lawn'),
   newScheduleItem(
     'Workshop',
     '1:00 PM - 2:00 PM',
@@ -84,7 +84,7 @@ export const SUNDAY_SCHEDULE = [
   ),
   newScheduleItem('Workshop', '3:00 PM - 4:00 PM', 'Ethics in AI (hosted by ACM AI)', 'CSE 1202'),
   newScheduleItem('Deadline', '5:00 PM', 'Project Submissions Due!', 'All Venues'),
-  newScheduleItem('Info', '6:00 PM', 'Dinner Distribution', 'Warren Mall'),
+  newScheduleItem('Info', '6:00 PM', 'Dinner Distribution', 'Warren Bear Lawn'),
   newScheduleItem(
     'Main Event',
     '7:00 PM - 9:00 PM',
