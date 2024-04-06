@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { FRIDAY_SCHEDULE } from './schedule';
+import { LOCATION_MAPS_LINKS, SATURDAY_SCHEDULE } from './schedule';
 import styles from './style.module.scss';
+import Link from 'next/link';
 
 const Schedule = () => {
-  const [display, setDisplay] = useState<'Friday' | 'Saturday'>('Friday');
-  const schedule = FRIDAY_SCHEDULE;
+  const [display, setDisplay] = useState<'Saturday' | 'Sunday'>('Saturday');
+  const schedule = SATURDAY_SCHEDULE;
 
   return (
     <div className={styles.container} id="schedule">
@@ -12,10 +13,10 @@ const Schedule = () => {
         <h2>Schedule</h2>
         <select
           value={display}
-          onChange={e => setDisplay(e.target.value === 'Friday' ? 'Friday' : 'Saturday')}
+          onChange={e => setDisplay(e.target.value === 'Saturday' ? 'Saturday' : 'Sunday')}
         >
-          <option>Friday</option>
           <option>Saturday</option>
+          <option>Sunday</option>
         </select>
       </div>
       <table>
@@ -34,7 +35,19 @@ const Schedule = () => {
             </td>
             <td>{item.time}</td>
             <td>{item.name}</td>
-            <td>{item.location}</td>
+            <td>
+              {LOCATION_MAPS_LINKS.has(item.location) ? (
+                <Link
+                  href={LOCATION_MAPS_LINKS.get(item.location) as string}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.location}
+                </Link>
+              ) : (
+                item.location
+              )}
+            </td>
           </tr>
         ))}
       </table>
