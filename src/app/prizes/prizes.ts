@@ -33,7 +33,7 @@ export const PRIZES = [
   newReward('Best Duo Hack', ['2x $50 Fan-Fan Gift Cards'], ['fanfan.png']),
   newReward('Best Beginner Hack', ['4x Squishmallows', 'Desmos Swag Bag'], ['squishmallow.png']),
   newReward('Track: Lost at Sea', ['4x Amazon Echo Pop'], ['echopop.png']),
-  newReward('Track: X Marks the Spot', ['4x Anker Speaker'], ['anker.png']),
+  newReward('Track: X Marks the Spot', ['4x Speaker'], ['anker.png']),
   newReward('Track: All Hands on Deck', ['4x Wireless Charging Desk Lamp'], ['lamp.jpg']),
   newReward("Track: Captain's Classroom", ['4x Portable Power Bank'], ['powerbank.jpg']),
 ];
