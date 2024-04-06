@@ -1,0 +1,135 @@
+.container {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 36px;
+    }
+
+    select {
+      padding: 0.625rem 1.5rem;
+      border: 0;
+      border-radius: 0.875rem;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 500;
+      border-right: 16px solid transparent;
+    }
+
+    select:focus {
+      outline: 0;
+    }
+  }
+
+  table {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.875rem;
+    border-collapse: collapse;
+
+    th,
+    td {
+      text-align: left;
+      padding: 1.5625rem 3.125rem;
+    }
+
+    tr:first-child {
+      border-bottom: 2px solid #afe1fd;
+    }
+  }
+}
+
+.tag {
+  border-radius: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &[data-type='Main Event'] {
+    background: #d6e5f8;
+    color: #142e52;
+  }
+
+  &[data-type='Social'] {
+    background: #d7ede7;
+    color: #00573f;
+  }
+
+  &[data-type='Workshop'] {
+    background: #ece6f9;
+    background: #ece6f9;
+    color: #35118d;
+  }
+
+  &[data-type='Info'] {
+    color: #8f5a26;
+    background: #ffe2c4;
+  }
+
+  &[data-type='Deadline'] {
+    background: #fad5dc;
+    color: #8d0d25;
+  }
+}
+
+.mobileContainer {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 0.75rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-bottom: 2px solid #afe1fd;
+
+    &:last-child {
+      border: 0;
+    }
+
+    div {
+      font-size: 1rem;
+      line-height: 1.3125rem;
+      letter-spacing: 0.01563rem;
+    }
+
+    strong {
+      font-size: 1.3125rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}
+
+@media screen and (width < 1100px) {
+  .container {
+    table {
+      display: none;
+    }
+  }
+
+  .mobileContainer {
+    display: flex;
+  }
+}

@@ -13,6 +13,14 @@ const LINKS = [
     href: '/',
   },
   {
+    name: 'Schedule',
+    href: '/#schedule',
+  },
+  {
+    name: 'Sponsors',
+    href: '/#sponsors',
+  },
+  {
     name: 'FAQs',
     href: '/faq',
   },

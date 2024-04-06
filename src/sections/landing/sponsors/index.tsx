@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Sponsors = () => {
   return (
-    <div className={styles.pageContainer}>
+    <div className={styles.pageContainer} id="sponsors">
       <h2>Sponsors</h2>
       <div className={styles.sponsors}>
         {SPONSORS.map(({ url, src }) => (
