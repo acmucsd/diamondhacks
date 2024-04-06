@@ -79,7 +79,7 @@ export const SUNDAY_SCHEDULE = [
   newScheduleItem(
     'Workshop',
     '2:00 PM - 3:00 PM',
-    'Intro to Website Design (hosted by DS3)',
+    'Project Website Building Workshop (hosted by DS3)',
     'CSE 1202'
   ),
   newScheduleItem('Workshop', '3:00 PM - 4:00 PM', 'Ethics in AI (hosted by ACM AI)', 'CSE 1202'),
