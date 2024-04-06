@@ -5,6 +5,10 @@
   --side-padding-small: 30px;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 html,
 body,
 footer {

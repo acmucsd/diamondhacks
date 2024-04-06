@@ -1,0 +1,61 @@
+.container {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  h2 {
+    font-size: 36px;
+  }
+
+  table {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.875rem;
+    border-collapse: collapse;
+
+    th,
+    td {
+      text-align: left;
+      padding: 1.5625rem 3.125rem;
+    }
+
+    .tag {
+      border-radius: 1.5rem;
+      padding: 0.5rem 0.75rem;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &[data-type='Main Event'] {
+        background: #D6E5F8;
+        color: #142E52;
+      }
+
+      &[data-type='Social'] {
+        background: #D7EDE7;
+        color: #00573F;
+      }
+
+      &[data-type='Workshop'] {background: #ECE6F9;
+        background: #ECE6F9;
+        color: #35118D;
+      }
+
+      &[data-type='Notice'] {
+        color: #8f5a26;
+        background: #FFE2C4;
+      }
+
+      &[data-type='Deadline'] {
+        background: #FAD5DC;
+        color: #8D0D25;
+      }
+    }
+
+    tr:first-child {
+      border-bottom: 2px solid #afe1fd;
+    }
+  }
+}

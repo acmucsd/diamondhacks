@@ -44,4 +44,8 @@ export const SPONSORS = [
     url: 'https://codecrafters.io/event/diamondhacks',
     src: 'codecrafters.png',
   },
+  {
+    url: 'https://gen.xyz/',
+    src: 'xyz.png',
+  },
 ];
