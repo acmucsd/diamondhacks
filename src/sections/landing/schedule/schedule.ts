@@ -1,4 +1,4 @@
-interface ScheduleItem {
+export interface ScheduleItem {
   type: 'Main Event' | 'Social' | 'Workshop' | 'Info' | 'Deadline';
   time: string;
   name: string;
@@ -36,7 +36,7 @@ export const SATURDAY_SCHEDULE: ScheduleItem[] = [
     'CSE 1202'
   ),
   newScheduleItem('Workshop', '3:00 PM - 4:00 PM', 'Deep Learning (hosted by DS3)', 'CSE 1202'),
-  newScheduleItem('Social', '4:00 PM - 5:00 PM', 'Trivia Social', 'CSE 1202'),
+  newScheduleItem('Social', '4:00 PM - 5:00 PM', 'Pirate Charades', 'CSE 1202'),
   newScheduleItem(
     'Workshop',
     '5:00 PM - 6:00 PM',
