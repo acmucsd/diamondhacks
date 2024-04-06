@@ -4,6 +4,10 @@
   flex-direction: column;
   gap: 2.5rem;
 
+  a {
+    text-decoration: none;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
@@ -64,7 +68,7 @@
         color: #35118d;
       }
 
-      &[data-type='Notice'] {
+      &[data-type='Info'] {
         color: #8f5a26;
         background: #ffe2c4;
       }

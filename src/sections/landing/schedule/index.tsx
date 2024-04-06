@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { LOCATION_MAPS_LINKS, SATURDAY_SCHEDULE } from './schedule';
+import { LOCATION_MAPS_LINKS, SATURDAY_SCHEDULE, SUNDAY_SCHEDULE } from './schedule';
 import styles from './style.module.scss';
 import Link from 'next/link';
 
 const Schedule = () => {
   const [display, setDisplay] = useState<'Saturday' | 'Sunday'>('Saturday');
-  const schedule = SATURDAY_SCHEDULE;
+  const schedule = display === 'Saturday' ? SATURDAY_SCHEDULE : SUNDAY_SCHEDULE;
 
   return (
     <div className={styles.container} id="schedule">
