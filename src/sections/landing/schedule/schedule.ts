@@ -60,7 +60,6 @@ export const SATURDAY_SCHEDULE: ScheduleItem[] = [
 ];
 
 export const SUNDAY_SCHEDULE = [
-  newScheduleItem('Info', '8:30 AM', 'Breakfast Distribution', 'Warren Bear Lawn'),
   newScheduleItem('Workshop', '9:00 AM - 10:00 AM', 'Career Talk with CoCalc', 'CSE 1202'),
   newScheduleItem('Workshop', '10:00 AM - 11:00 AM', 'Intro to RegEx (hosted by TSE)', 'CSE 1202'),
   newScheduleItem(
